@@ -1,0 +1,32 @@
+@media (min-width: 600px) {
+  main {
+    background: none;
+  }
+
+  .header-content {
+    height: 80px;
+  }
+
+  .iconHamburger {
+    display: flex;
+    gap: 10px;
+  }
+
+  .button-hidden {
+    display: block;
+  }
+
+  #checkbox-menu {
+    display: none;
+  }
+  .label-checkbox-menu {
+    display: none;
+  }
+  .checkbox-menu {
+    display: none;
+  }
+  .container-form {
+    align-self: center;
+    padding: 0 42px;
+  }
+}
