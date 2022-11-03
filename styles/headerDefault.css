@@ -3,6 +3,10 @@ header {
   margin-bottom: 22px;
 }
 
+h1 {
+  font-weight: bold;
+}
+
 .header-content {
   height: 60px;
   padding: 0 15px;
