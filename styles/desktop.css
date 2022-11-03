@@ -1,0 +1,54 @@
+@media (min-width: 600px) {
+  main {
+    background: none;
+  }
+
+  .iconHamburger {
+    display: flex;
+    gap: 10px;
+  }
+
+  .button-hidden {
+    display: block;
+  }
+
+  #checkbox-menu {
+    display: none;
+  }
+  .label-checkbox-menu {
+    display: none;
+  }
+  .checkbox-menu {
+    display: none;
+  }
+
+  .container-select {
+    width: 550px;
+    height: 743px;
+  }
+
+  .container-img-select {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container-img {
+    display: inline;
+    margin-bottom: 50px;
+  }
+  .container-img > img {
+    width: 550px;
+    height: 743px;
+    object-fit: cover;
+  }
+
+  #list-companies {
+    flex-direction: column;
+    height: 613px;
+    margin-top: 25px;
+  }
+
+  .card-companies {
+    width: 100%;
+  }
+}
