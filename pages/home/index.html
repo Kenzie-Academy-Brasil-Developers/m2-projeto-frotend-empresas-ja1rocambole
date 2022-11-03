@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/menuHamburger.css">
+    <link rel="stylesheet" href="../../styles/headerDefault.css">
+    <link rel="stylesheet" href="../../styles/listCompanies.css">
+    <link rel="stylesheet" href="../../styles/desktop.css">
+    <link rel="stylesheet" href="../../styles/modalLoginCadastro.css">
+    <link rel="stylesheet" href="../../styles/buttons.css">
     <title>home</title>
 </head>
+
 <body>
-    
+    <header class="">
+        <div class="container header-content">
+            <div class="container-title-header">
+                <div class="ellipse"></div>
+                <h1>Kenzie Empresas</h1>
+            </div>
+
+            <div class="iconHamburger">
+                <button class="button-white-default button-hidden">Login</button>
+                <button class="button-blue-default button-hidden">Cadastro</button>
+
+                <input type="checkbox" id="checkbox-menu">
+
+                <label class="label-checkbox-menu" for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="modal-login-cadastro hidden">
+                    <button class="button-white-default">Login</button>
+                    <button class="button-blue-default">Cadastro</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="container-img-select">
+            <div class="container-img">
+                <img src="../../assets/Rectangle 7.png" alt="" srcset="">
+            </div>
+
+            <div class="container-select">
+                <select name="" id="select-setor">
+
+                </select>
+                <ul id="list-companies">
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    <script type="module" src="index.js"></script>
 </body>
+
 </html>

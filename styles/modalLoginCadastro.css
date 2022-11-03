@@ -1,0 +1,44 @@
+.modal-login-cadastro {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100vw;
+  height: 95px;
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+}
+
+@keyframes show-modal-login-cadastro {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 55px;
+  }
+}
+@keyframes hidden-modal-login-cadastro {
+  0% {
+    top: 55px;
+  }
+  100% {
+    top: -100px;
+  }
+}
+
+.show-modal {
+  animation-name: show-modal-login-cadastro;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+.hidden-modal {
+  animation-name: hidden-modal-login-cadastro;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+.point-none {
+  pointer-events: none;
+}

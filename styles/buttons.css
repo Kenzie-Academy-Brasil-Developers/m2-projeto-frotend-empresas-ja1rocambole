@@ -1,0 +1,23 @@
+.button-blue-default {
+  background: var(--color-blue);
+  border: solid 1px var(--color-blue);
+  height: 41px;
+  width: 142px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-white);
+}
+
+.button-white-default {
+  background: var(--color-white);
+  border: solid 1px var(--color-blue);
+  height: 41px;
+  width: 142px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-blue);
+}
