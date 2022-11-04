@@ -25,7 +25,7 @@ function eventLogin() {
     });
 
     const tokenObj = await postLogin(body);
-    console.log(tokenObj);
+
     if (
       tokenObj.error == "email invalid!" ||
       tokenObj.error == "password invalid!"
@@ -36,12 +36,9 @@ function eventLogin() {
       console.log(token);
 
       localStorage.setItem("token", JSON.stringify(token));
-      //com esse token eu cheko se o user é admin ou nao com a request que estou indo criar
+
       const checkAdminOurUser = await getCheckTypeUser(token);
       const adminTrueOurFalse = checkAdminOurUser.is_admin;
-
-      console.log(checkAdminOurUser);
-      console.log(adminTrueOurFalse);
 
       if (adminTrueOurFalse) {
         window.location.replace("../admin");

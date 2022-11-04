@@ -1,7 +1,10 @@
-import {} from "../../scripts/requests.js";
+// import {} from "../../scripts/requests.js";
 import { menuHamburger } from "../../scripts/menuHamburger.js";
 import { buttonReplace } from "../../scripts/buttonReplace.js";
 import { eventLogin } from "../../scripts/eventLogin.js";
+import { buttonLoginDisabled } from "../../scripts/buttonsDisabled.js"
+
+buttonLoginDisabled()
 
 menuHamburger();
 
