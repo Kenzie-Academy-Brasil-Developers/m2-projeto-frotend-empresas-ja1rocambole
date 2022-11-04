@@ -9,6 +9,9 @@
   line-height: 22px;
   color: var(--color-white);
 }
+.button-blue-default-enable{
+  opacity: 0.8;
+}
 
 .button-white-default {
   background: var(--color-white);
