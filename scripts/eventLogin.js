@@ -33,7 +33,6 @@ function eventLogin() {
       window.alert("Email ou senha incorretos");
     } else {
       const token = tokenObj.token;
-      console.log(token);
 
       localStorage.setItem("token", JSON.stringify(token));
 

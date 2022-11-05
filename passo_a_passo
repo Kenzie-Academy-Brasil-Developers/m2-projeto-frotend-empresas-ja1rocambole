@@ -1,145 +1,122 @@
-
-
-
-x.x. É possível se redirecionar para as páginas com botões no header, como demonstrado no figma.
-
-
+x.x. É possível se redirecionar para as páginas com botões no header, como demonstrado no figma.✅
 
 x.x. HomePage - Renderizar Empresas
-Com base na API renderiza os cards na home page com as seguintes informações de cada empresa cadastrada: nome, horário de abertura e setor
+Com base na API renderiza os cards na home page com as seguintes informações de cada empresa cadastrada: nome, horário de abertura e setor✅
 
 x.x HomePage - Filtro por select
-1. Renderiza um select com todos os setores já cadastrados com base na API
-2. Ao Escolher um dos setores as empresas devem ser filtradas.
 
+1. Renderiza um select com todos os setores já cadastrados com base na API✅
+2. Ao Escolher um dos setores as empresas devem ser filtradas.✅
 
+x.x. Página de Cadastro - Cadastrar usuário❌
 
-x.x. Página de Cadastro - Cadastrar usuário
 1. Sendo possível cadastrar um usuário via formulário na API
 2. Ao cadastrar redirecionar o usuário para a página de login
 
-
-
 x.x. Este critério está vinculado ao objetivo de aprendizagemPágina de Login - Autenticar Usuário
-1. É possível autenticar um usuário via formulário na API
-2. O token retornado é armazenado no localStorage
-3. Redireciona para o dashboard respectivo ao seu tipo de usuário
 
+1. É possível autenticar um usuário via formulário na API✅
+2. O token retornado é armazenado no localStorage✅
+3. Redireciona para o dashboard respectivo ao seu tipo de usuário✅
 
+# ADMIN ⬇️
 
 x.x. Dashboard Admin - Renderizar departamentos
+
 1. Renderiza todos os departamentos cadastrados na API
 2. Cada card contém um botão para visualizar, editar e deletar.
 
-
-
 x.x. Dashboard Admin - Filtrar Departamentos por empresa
+
 1. Existe um select com todas as empresas vindo da API
 2. Filtra os departamentos baseados nesse select ao selecionar a empresa
 
-
-
 x.x. Dashboard Admin - Criar Departamento
+
 1. Ao clicar em um botão criar, abre um modal com um formulário capaz de cadastrar um departamento na aplicação
 2. Formulário com os dados: nome do departamento, descrição e um select com as empresas já cadastradas vindas da API
 
-
-
 x.x. Dashboard Admin - Editar Departamento
+
 1. Ao clicar em um botão de editar, abre um modal com um formulário já preenchido com a descrição anterior
 2. Atualiza o dado no banco caso o usuário altere algo na descrição
 
-
-
 x.x. Dashboard Admin - Deletar Departamento
+
 1. Ao clicar em um botão de deletar, abre um modal com a mensagem de confirmação como mostrado no figma.
 2. Ao clicar no botão de confirmar, deleta o dado via API
 
-
-
 x.x. Este critério está vinculado ao objetivo de aprendizagemDashboard Admin - Visualizar Departamento
+
 1. Ao clicar em um botão de visualizar, abre um modal com as seguintes informações: nome, descrição e a que empresa pertence.
 2. Renderiza um select com os usuários que não foram contratados por nenhuma empresa.
 
-
-
 x.x. Este critério está vinculado ao objetivo de aprendizagemDashboard Admin - Contratar Funcionário para um Departamento
+
 1. Dentro da visualização de departamento, é possível escolher um dos usuários sem departamento do select e contratar ele para o departamento respectivo pelo botão contratar
 
-
-
 x.x. Dashboard Admin - Renderizar funcionário de departamento
+
 1. No modal de visualizar departamento renderiza uma lista de usuários que trabalham nesse departamento, cada card deverá conter um botão para demitir usuário do departamento.
 
-
-
 x.x. Dashboard Admin - Demitir Funcionário para um Departamento
+
 1. Ao clicar no botão demitir dentro da visualização de departamento, remove o usuário do departamento (existe um endpoint especifico para demitir)
 
-
-
 x.x. Dashboard Admin - Renderizar usuários
+
 1. Renderiza todos os usuários cadastrados atualmente na API
 2. Cada card possui um botão para editar e deletar.
 3. Não renderiza o usuário ADMIN
 
-
-
 x.x. aprendizagemDashboard Admin - Editar usuários
+
 1. Ao clicar em editar, abre um modal com um formulário possuindo os seguintes campos: modalidade de trabalho (home office, presencial, híbrido) e o cargo (estágio, júnior, pleno, sênior)
 2. Ao clicar em atualizar modifica suas respectivas informações via API
 
-
-
 x.x. Dashboard Admin - Deletar usuário
+
 1. Ao clicar em um botão de deletar, abre um modal com a mensagem de confirmação como mostrado no figma.
 2. Ao clicar no botão de confirmar, deleta o dado via API
 
-
+# USER ⬇️
 
 x.x. Dashboard User - Renderizar informações pessoais
+
 1. Renderiza os dados do usuário na tela: username, email, cargo e modalidade de trabalho
 2. Caso a modalidade ou o cargo sejam nulos, não demostra o dado na tela.
 3. Possui botão de editar
 
-
-
 x.x. User - Editar informações pessoais
+
 1. Ao clicar em editar, abre um modal com um formulário contendo os campos: username, email e password
 2. Ao clicar em atualizar enviar as informações do formulário via API e atualiza os dados do usuário atual
 
-
-
 x.x. Dashboard User - Renderizar co-workers
+
 1. Renderiza as informações de trabalho do usuário no bloco azul: nome da empresa e nome do departamento
 2. Renderiza os usuários que trabalham com esse usuário logado (co-workers) em forma de cards com o nome e o cargo do colega.
 
-
-
 x.x. Validação de usuário logado
+
 1. Usuário precisa estar logado para acessar os dashboards, caso contrário, redireciona para a HomePage.
 2. Usuário admin consegue acessar apenas o dashboard admin
 3. Usuário comum acessa apenas o dashboard usuário comum.
 4. Caso não siga as regras acima, redireciona para o dashboard correto.
 
-
-
 x.x. Logout
 Ao clicar no botão de logout, remove as informações do usuário do localStorage e redireciona para a HomePage
 
 
+x.x. Este critério está vinculado ao objetivo de aprendizagemMobile First✅
 
-x.x. Este critério está vinculado ao objetivo de aprendizagemMobile First
-1. As páginas: HomePage, Login e Register tem sua versão mobile conforme o figma
-2. Deverá conter um menu dropdown/hambúrguer
-
-
+1. As páginas: HomePage, Login e Register tem sua versão mobile conforme o figma✅
+2. Deverá conter um menu dropdown/hambúrguer✅
 
 x.x. Estilização
 Estilização de todos os elementos de acordo com o Figma
 
-
-
 x.x. Respostas da aplicação
+
 1. Caso as requisições sejam bem sucedidas, demostrar um toastfy de acerto com uma mensagem respectiva
 2. Caso as requisições não sejam bem sucedidas, demostrar um toastfy de erro com uma mensagem respectiva

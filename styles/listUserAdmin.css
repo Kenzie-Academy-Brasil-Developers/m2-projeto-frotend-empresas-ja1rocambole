@@ -1,0 +1,26 @@
+.container-users {
+  height: 414px;
+}
+
+.container-users-menu {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+#list-users {
+  box-sizing: border-box;
+  padding: 54px;
+  background: #f8f8f8;
+  height: 370px;
+  overflow-y: auto;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px 74px;
+  flex-wrap: wrap;
+}
+
+.button-card-hidden {
+  visibility: hidden;
+  pointer-events: none;
+}

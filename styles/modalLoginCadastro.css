@@ -1,7 +1,8 @@
 .modal-login-cadastro {
   position: absolute;
-  top: 55px;
+  top: 61px;
   left: 0;
+  z-index: 1;
   width: 100vw;
   height: 95px;
   background-color: var(--color-white);
@@ -16,12 +17,12 @@
     top: -100px;
   }
   100% {
-    top: 55px;
+    top: 61px;
   }
 }
 @keyframes hidden-modal-login-cadastro {
   0% {
-    top: 55px;
+    top: 61px;
   }
   100% {
     top: -100px;

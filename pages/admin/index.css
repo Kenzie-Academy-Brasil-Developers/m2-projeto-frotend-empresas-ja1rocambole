@@ -1,0 +1,25 @@
+main {
+  background: none;
+}
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--color-black);
+}
+
+.header-content {
+  height: 80px;
+}
+
+.container-main {
+  margin-top: 78px;
+  margin-bottom: 44px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+
+
+
