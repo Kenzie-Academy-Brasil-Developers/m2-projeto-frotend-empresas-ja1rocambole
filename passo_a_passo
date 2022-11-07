@@ -21,32 +21,35 @@ x.x. Este critério está vinculado ao objetivo de aprendizagemPágina de Login 
 
 # ADMIN ⬇️
 
-x.x. Dashboard Admin - Renderizar departamentos
-1. Renderiza todos os departamentos cadastrados na API
-2. Cada card contém um botão para visualizar, editar e deletar.
+x.x. Dashboard Admin - Renderizar departamentos✅
+1. Renderiza todos os departamentos cadastrados na API✅
+2. Cada card contém um botão para visualizar, editar e deletar.✅
 
-x.x. Dashboard Admin - Filtrar Departamentos por empresa
-1. Existe um select com todas as empresas vindo da API
-2. Filtra os departamentos baseados nesse select ao selecionar a empresa
+x.x. Dashboard Admin - Filtrar Departamentos por empresa✅
+1. Existe um select com todas as empresas vindo da API✅
+2. Filtra os departamentos baseados nesse select ao selecionar a empresa✅
 
-x.x. Dashboard Admin - Criar Departamento
-1. Ao clicar em um botão criar, abre um modal com um formulário capaz de cadastrar um departamento na aplicação
-2. Formulário com os dados: nome do departamento, descrição e um select com as empresas já cadastradas vindas da API
+x.x. Dashboard Admin - Criar Departamento✅
+1. Ao clicar em um botão criar, abre um modal com um formulário capaz de cadastrar um departamento na aplicação✅
+2. Formulário com os dados: nome do departamento, descrição e um select com as empresas já cadastradas vindas da API✅
 
-x.x. Dashboard Admin - Editar Departamento
-1. Ao clicar em um botão de editar, abre um modal com um formulário já preenchido com a descrição anterior
-2. Atualiza o dado no banco caso o usuário altere algo na descrição
+x.x. Este critério está vinculado ao objetivo de aprendizagemDashboard Admin - Visualizar Departamento🔎🚨
+1. Ao clicar em um botão de visualizar, abre um modal com as seguintes informações: nome, descrição e a que empresa pertence.✅
+2. Renderiza um select com os usuários que não foram contratados por nenhuma empresa.✅
 
-x.x. Dashboard Admin - Deletar Departamento
-1. Ao clicar em um botão de deletar, abre um modal com a mensagem de confirmação como mostrado no figma.
-2. Ao clicar no botão de confirmar, deleta o dado via API
+x.x. Dashboard Admin - Editar Departamento✅
+1. Ao clicar em um botão de editar, abre um modal com um formulário já preenchido com a descrição anterior✅
+2. Atualiza o dado no banco caso o usuário altere algo na descrição✅
 
-x.x. Este critério está vinculado ao objetivo de aprendizagemDashboard Admin - Visualizar Departamento
-1. Ao clicar em um botão de visualizar, abre um modal com as seguintes informações: nome, descrição e a que empresa pertence.
-2. Renderiza um select com os usuários que não foram contratados por nenhuma empresa.
+x.x. Dashboard Admin - Deletar Departamento✅
+1. Ao clicar em um botão de deletar, abre um modal com a mensagem de confirmação como mostrado no figma.✅
+2. Ao clicar no botão de confirmar, deleta o dado via API✅
 
-x.x. Este critério está vinculado ao objetivo de aprendizagemDashboard Admin - Contratar Funcionário para um Departamento
+x.x. Este critério está vinculado ao objetivo de aprendizagemDashboard Admin - Contratar Funcionário para um Departamento🔎
 1. Dentro da visualização de departamento, é possível escolher um dos usuários sem departamento do select e contratar ele para o departamento respectivo pelo botão contratar
+
+
+#A PARTIR DAQUI É A PARTE DO CONTAINER DOS USERS🤗
 
 x.x. Dashboard Admin - Renderizar funcionário de departamento
 1. No modal de visualizar departamento renderiza uma lista de usuários que trabalham nesse departamento, cada card deverá conter um botão para demitir usuário do departamento.

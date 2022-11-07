@@ -9,7 +9,7 @@
   line-height: 22px;
   color: var(--color-white);
 }
-.button-blue-default-enable{
+.button-blue-default-enable {
   opacity: 0.8;
 }
 
@@ -23,6 +23,26 @@
   font-size: 18px;
   line-height: 22px;
   color: var(--color-blue);
+}
+.button-red-default {
+  background: var(--color-white);
+  border: solid 1px var(--color-red);
+  padding: 11px 26px;
+
+
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-red);
+}
+.button-green-default {
+  background: var(--color-green);
+  border: solid 1px var(--color-green);
+  padding: 11px 26px;
+
+
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-white);
 }
 
 .button-hidden {
