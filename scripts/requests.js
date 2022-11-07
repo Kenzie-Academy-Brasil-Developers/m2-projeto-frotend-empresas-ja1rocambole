@@ -38,6 +38,20 @@ async function postLogin(body) {
   return response;
 }
 
+async function postRegister(body) {
+  const request = await fetch(baseUrl + "auth/register", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(body),
+  });
+
+  const response = await request.json();
+
+  return response;
+}
+
 async function getCheckTypeUser(token) {
   const request = await fetch(baseUrl + "auth/validate_user", {
     method: "GET",
@@ -56,5 +70,6 @@ export {
   getBySectorCompanies,
   getAllSectors,
   postLogin,
+  postRegister,
   getCheckTypeUser,
 };

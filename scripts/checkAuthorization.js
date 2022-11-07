@@ -1,7 +1,7 @@
 import { getTokenLocal } from "./getTokenLocal.js";
 import { getCheckTypeUser } from "./requestsAdmin.js";
 
-async function checkUserType() {
+async function checkUserTypeAdmin() {
   const token = getTokenLocal();
 
   const responseAdminOurUser = await getCheckTypeUser(token);
@@ -10,5 +10,14 @@ async function checkUserType() {
     window.location.replace("../home");
   }
 }
+async function checkUserTypeUser() {
+  const token = getTokenLocal();
 
-export { checkUserType };
+  const responseAdminOurUser = await getCheckTypeUser(token);
+
+  if (responseAdminOurUser == true) {
+    window.location.replace("../home");
+  }
+}
+
+export { checkUserTypeAdmin, checkUserTypeUser };

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/menuHamburger.css">
+    <link rel="stylesheet" href="../../styles/headerDefault.css">
+    <link rel="stylesheet" href="../../styles/buttons.css">
+    <link rel="stylesheet" href="../../styles/mainLogin.css">
+    <link rel="stylesheet" href="../../styles/desktopLogin.css">
+    <link rel="stylesheet" href="../../styles/modalLoginCadastro.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header class="">
+        <div class="container header-content">
+            <div class="container-title-header">
+                <div class="ellipse"></div>
+                <h1>Kenzie Empresas</h1>
+            </div>
+
+            <div class="iconHamburger">
+                <button class="button-white-default button-hidden">Home</button>
+                <button class="button-blue-default button-hidden">Cadastro</button>
+
+                <input type="checkbox" id="checkbox-menu">
+
+                <label class="label-checkbox-menu" for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="modal-login-cadastro hidden">
+                    <button class="button-white-default">Home</button>
+                    <button class="button-blue-default">Login</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-main">
+        <div class="container-img-background">
+            <img src="../../assets/Rectangle 7.png" alt="">
+        </div>
+
+        <div class="container-form container-form-register">
+            <h2>Cadastre-se</h2>
+
+            <form id="form-login" action="">
+                <input name="username" type="text" placeholder="Seu nome">
+                <input name="email" type="email" placeholder="Seu e-mail">
+                <input name="password" type="password" placeholder="Sua senha">
+                <select name="professional_level" id="">
+                    <option value="">Selecionar nível profissional</option>
+                    <option value="estágio">estágio</option>
+                    <option value="júnior">júnior</option>
+                    <option value="pleno">pleno</option>
+                    <option value="sênior">sênior</option>
+                </select>
+                <button id="button-register" class="button-blue-default">Cadastre-se</button>
+            </form>
+            <p class="our">ou</p>
+            <button class="button-white-default">Retornar</button>
+        </div>
+    </main>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>

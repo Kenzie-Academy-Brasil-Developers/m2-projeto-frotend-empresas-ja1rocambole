@@ -78,4 +78,43 @@ function buttondisabledModalEditUser(form, buttonForm) {
   });
 }
 
-export { buttonLoginDisabled, buttonModalCreateDepartamentDisabled, buttondisabledModalEditUser };
+function buttonRegisterDisabled(form, elements, button) {
+  console.log(elements);
+
+  if (
+    elements[0].value == "" ||
+    elements[1].value == "" ||
+    elements[2].value == "" ||
+    elements[3].value == ""
+  ) {
+    button.disabled = true;
+    button.classList.remove("button-primary-enable");
+  } else {
+    button.disabled = false;
+    button.classList.add("button-primary-enable");
+  }
+
+  form.addEventListener("input", () => {
+    if (
+      elements[0].value == "" ||
+      elements[1].value == "" ||
+      elements[2].value == "" ||
+      elements[3].value == ""
+    ) {
+      button.disabled = true;
+      button.classList.remove("button-primary-enable");
+    } else {
+      button.disabled = false;
+      button.classList.add("button-primary-enable");
+    }
+  });
+
+  console.log(button);
+}
+
+export {
+  buttonLoginDisabled,
+  buttonModalCreateDepartamentDisabled,
+  buttondisabledModalEditUser,
+  buttonRegisterDisabled,
+};

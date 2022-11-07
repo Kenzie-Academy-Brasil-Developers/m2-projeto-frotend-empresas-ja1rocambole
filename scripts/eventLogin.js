@@ -1,11 +1,6 @@
 import { postLogin, getCheckTypeUser } from "./requests.js";
 
 function eventLogin() {
-  //x.x. Este critério está vinculado ao objetivo de aprendizagemPágina de Login - Autenticar Usuário
-  // 1. É possível autenticar um usuário via formulário na API
-  // 2. O token retornado é armazenado no localStorage
-  // 3. Redireciona para o dashboard respectivo ao seu tipo de usuário
-
   const form = document.querySelector("#form-login");
   const elements = [...form.elements];
 

@@ -35,6 +35,11 @@ header {
   flex-direction: column;
 }
 
+.container-form-register {
+  height: 520px;
+  max-height: none;
+}
+
 .container-form > button {
   width: 100%;
   min-height: 41px;
@@ -72,6 +77,14 @@ header {
 }
 
 #form-login > input {
+  margin-bottom: 13px;
+  height: 52px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 17px;
+  box-sizing: border-box;
+}
+#form-login > select {
   margin-bottom: 13px;
   height: 52px;
   background: #ffffff;

@@ -1,9 +1,9 @@
-import { checkUserType } from "../../scripts/checkAuthorization.js";
+import { checkUserTypeAdmin } from "../../scripts/checkAuthorization.js";
 import { renderOptionsCompanies } from "../../scripts/crateOpitions.js";
 import { eventCreateDepartament } from "../../scripts/createPostDepartament.js";
 import { renderCardUsers } from "../../scripts/renderUsers.js";
 
-checkUserType();
+checkUserTypeAdmin();
 
 renderOptionsCompanies();
 
