@@ -1,0 +1,26 @@
+.modal-confirm {
+  position: relative;
+  width: 733px;
+  height: 342px;
+  box-sizing: border-box;
+  padding: 70px 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background: var(--color-white);
+}
+
+.title-modal-confirm {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+
+  color: var(--color-balck);
+}
+
+.modal-confirm > .button-green-default {
+  width: 442px;
+}

@@ -1,0 +1,80 @@
+.background-modal {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(30, 30, 30, 0.5);
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-create-edit {
+  position: relative;
+  width: 506px;
+  min-height: 100px;
+  box-sizing: border-box;
+  padding: 39px 41px 45px 41px;
+
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
+}
+
+.modal-create-edit > form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-create-edit > form > button {
+  width: 100%;
+}
+
+.close-modal {
+  right: 17px;
+  top: 15px;
+
+  font-size: 32px;
+  font-family: "Nunito", sans-serif;
+  line-height: 0;
+
+  background: none;
+  border: none;
+  position: absolute;
+  width: 31px;
+  height: 31px;
+}
+
+.title-modal {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--color-black);
+}
+
+.input-modal {
+  margin-bottom: 13px;
+  box-sizing: border-box;
+  padding: 15px;
+  height: 52px;
+  background: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.text-area-edit {
+  box-sizing: border-box;
+  padding: 17px;
+  margin-bottom: 13px;
+  resize: none;
+  width: 418px;
+  height: 113px;
+
+  background: var(--color-white);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.select-edit-user {
+  margin-bottom: 13px;
+  box-sizing: border-box;
+  padding: 15px;
+  height: 52px;
+}

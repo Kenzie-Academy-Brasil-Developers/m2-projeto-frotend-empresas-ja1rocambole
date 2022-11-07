@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../../styles/mainLogin.css">
     <link rel="stylesheet" href="../../styles/desktopLogin.css">
     <link rel="stylesheet" href="../../styles/modalLoginCadastro.css">
-    <title>Login</title>
+    <title>Cadastro</title>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
                 </label>
                 <div class="modal-login-cadastro hidden">
                     <button class="button-white-default">Home</button>
-                    <button class="button-blue-default">Cadastro</button>
+                    <button class="button-blue-default">Login</button>
                 </div>
             </div>
         </div>
@@ -48,17 +48,24 @@
             <img src="../../assets/Rectangle 7.png" alt="">
         </div>
 
-        <div class="container-form">
-            <h2>Login</h2>
-            <p class="description-form">Preencha os campos para realizar login</p>
+        <div class="container-form container-form-register">
+            <h2>Cadastre-se</h2>
 
             <form id="form-login" action="">
+                <input name="username" type="text" placeholder="Seu nome">
                 <input name="email" type="email" placeholder="Seu e-mail">
                 <input name="password" type="password" placeholder="Sua senha">
-                <button id="button-login" class="button-blue-default">Login</button>
+                <select name="professional_level" id="">
+                    <option value="">Selecionar nível profissional</option>
+                    <option value="estágio">estágio</option>
+                    <option value="júnior">júnior</option>
+                    <option value="pleno">pleno</option>
+                    <option value="sênior">sênior</option>
+                </select>
+                <button id="button-register" class="button-blue-default">Cadastre-se</button>
             </form>
             <p class="our">ou</p>
-            <button class="button-white-default">Cadastro</button>
+            <button class="button-white-default">Retornar</button>
         </div>
     </main>
 

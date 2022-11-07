@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
+    <link rel="stylesheet" href="../../styles/menuHamburger.css">
+    <link rel="stylesheet" href="../../styles/headerDefault.css">
+    <link rel="stylesheet" href="../../styles/buttons.css">
+    <link rel="stylesheet" href="../../styles/modalLoginCadastro.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../styles/listDepartamentAdmin.css">
+    <link rel="stylesheet" href="../../styles/listUserAdmin.css">
+    <link rel="stylesheet" href="../../styles/modalCreateEdit.css">
+    <link rel="stylesheet" href="../../styles/modalViewDepartament.css">
+    <link rel="stylesheet" href="../../styles/modalConfirm.css">
+    <title>Admin</title>
+</head>
+
+<body>
+    <header class="">
+        <div class="container header-content">
+            <div class="container-title-header">
+                <div class="ellipse"></div>
+                <h1>Kenzie Empresas</h1>
+            </div>
+
+            <div class="iconHamburger">
+                <button class="button-white-default" id="button-logout">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="container-main">
+            <section class="container-departament">
+                <div class="container-departament-menu">
+                    <h2 class="title-departament">Departamentos</h2>
+
+                    <select class="select-enterprise" name="" id="select-enterprise">
+                        <option value="">Selecionar Empresa</option>
+                    </select>
+
+                    <button id="button-create-departament" class="button-blue-default">
+                        <span class="plus">+</span>
+                        <span class="create-departament-text">Criar</span>
+                    </button>
+                </div>
+
+                <ul id="list-departament">
+                </ul>
+            </section>
+
+
+            <section class="container-users">
+                <div>
+                    <div class="container-users-menu">
+                        <h2>Usuários cadastrados</h2>
+                    </div>
+
+                    <ul id="list-users">
+
+                        <li class="card-departament">
+                            <h4 class="card-title">Departamento</h4>
+                            <p class="card-description">Descriçao do Departamento</p>
+                            <p class="card-description">Nome da compania</p>
+                            <div class="card-icons">
+                                <span class="button-card-hidden"><img src="../../assets/olho.png" alt=""
+                                        srcset=""></span>
+                                <span class="button-card-user-edit"><img src="../../assets/lapisPreto.png" alt=""
+                                        srcset=""></span>
+                                <span class="button-card-user-delete"><img src="../../assets/lixeira.png" alt=""
+                                        srcset=""></span>
+                            </div>
+                        </li>
+                        <li class="card-departament">
+                            <h4 class="card-title">Departamento</h4>
+                            <p class="card-description">Descriçao do Departamento</p>
+                            <p class="card-description">Nome da compania</p>
+                            <div class="card-icons">
+                                <span class="button-card-hidden"><img src="../../assets/olho.png" alt=""
+                                        srcset=""></span>
+                                <span class="button-card-user-edit"><img src="../../assets/lapisPreto.png" alt=""
+                                        srcset=""></span>
+                                <span class="button-card-user-delete"><img src="../../assets/lixeira.png" alt=""
+                                        srcset=""></span>
+                            </div>
+                        </li>
+                        <li class="card-departament">
+                            <h4 class="card-title">Departamento</h4>
+                            <p class="card-description">Descriçao do Departamento</p>
+                            <p class="card-description">Nome da compania</p>
+                            <div class="card-icons">
+                                <span class="button-card-hidden"><img src="../../assets/olho.png" alt=""
+                                        srcset=""></span>
+                                <span class="button-card-user-edit"><img src="../../assets/lapisPreto.png" alt=""
+                                        srcset=""></span>
+                                <span class="button-card-user-delete"><img src="../../assets/lixeira.png" alt=""
+                                        srcset=""></span>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>

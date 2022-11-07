@@ -1,9 +1,6 @@
 import { menuHamburger } from "../../scripts/menuHamburger.js";
 import { buttonReplace } from "../../scripts/buttonReplace.js";
-import { eventLogin } from "../../scripts/eventLogin.js";
-import { buttonLoginDisabled } from "../../scripts/buttonsDisabled.js"
-
-buttonLoginDisabled()
+import { eventRegister } from "../../scripts/eventRegister.js";
 
 menuHamburger();
 
@@ -13,6 +10,6 @@ arrayButtonsHome.forEach((element) => {
 });
 
 const arrayButtonsCadastro = document.querySelector(".button-blue-default");
-buttonReplace(arrayButtonsCadastro, "../register");
+buttonReplace(arrayButtonsCadastro, "../login");
 
-eventLogin()
+eventRegister();
